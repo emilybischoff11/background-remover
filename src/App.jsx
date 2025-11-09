@@ -46,7 +46,8 @@ function App() {
       const formData = new FormData()
       formData.append('image', selectedImage)
 
-      const response = await axios.post('/api/remove-background', formData, {
+      const apiUrl = import.meta.env.VITE_API_URL || '/api'
+      const response = await axios.post(`${apiUrl}/remove-background`, formData, {
         responseType: 'blob',
         headers: {
           'Content-Type': 'multipart/form-data',
