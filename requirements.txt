@@ -1,6 +1,7 @@
 flask==2.3.2
 flask-cors==4.0.0
-Pillow==10.0.0
+Pillow==10.4.0
 python-dotenv==1.0.0
 rembg[cpu]==2.0.56
-onnxruntime==1.16.3
+onnxruntime==1.19.0
+gunicorn==21.2.0
